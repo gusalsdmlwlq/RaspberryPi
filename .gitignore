@@ -3,7 +3,7 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
-
+.android/
 # Other files and folders
 .settings/
 .ipynb_checkpoints/

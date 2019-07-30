@@ -205,8 +205,8 @@ def postprocess_boxes(pred_bbox, org_img_shape, input_size, score_threshold):
     score_mask = scores > score_threshold
     mask = np.logical_and(scale_mask, score_mask)
     
-#     person_mask = (classes == 0)
-#     mask = np.logical_and(mask,person_mask)
+    person_mask = (classes == 0)
+    mask = np.logical_and(mask,person_mask)
     
     coors, scores, classes = pred_coor[mask], scores[mask], classes[mask]
 
